@@ -10,7 +10,7 @@ The code was written to support STM32 series using HAL Driver library.
 #include "main.h"
 #include "max7219_drv.h"
 
-void int (void) {
+int main(void) {
    
    max7219_initialize();
    while(1) {
