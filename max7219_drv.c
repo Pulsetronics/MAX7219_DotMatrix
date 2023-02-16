@@ -44,8 +44,8 @@ static void __max7219_clearScreenBuffer(void) {
               max7219.screenBuffer[buffer_count][row] = 0;
      }
 }
-static void __max7219_clearDisplay(void) {
 
+static void __max7219_clearDisplay(void) {
      HAL_GPIO_WritePin(CLK_GPIO_Port, CLK_Pin, RESET);
      HAL_GPIO_WritePin(DIN_GPIO_Port, DIN_Pin, RESET);
      HAL_GPIO_WritePin(CS_GPIO_Port,  CS_Pin,  RESET);
