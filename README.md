@@ -14,12 +14,12 @@ void int (void) {
    
    max7219_initialize();
    while(1) {
-     max7219_scrollText((uint8_t*)"Pulsetronics    ", SCROLLING_SPEED_FAST);
-     max7219_scrollText((uint8_t*)"Written by Ayinde Olayiwola  ", SCROLLING_SPEED_VERY_FAST);
-     max7219_printText("Olay ");
-     HAL_Delay(500);
-     max7219_printCharacter('I', 1);
-     HAL_Delay(500);
+        max7219_scrollText((uint8_t*)"Pulsetronics    ", SCROLLING_SPEED_FAST);
+        max7219_scrollText((uint8_t*)"Written by Ayinde Olayiwola  ", SCROLLING_SPEED_VERY_FAST);
+        max7219_printText("Olay ");
+        HAL_Delay(500);
+        max7219_printCharacter('I', 1);
+        HAL_Delay(500);
    }
  }
 ```
